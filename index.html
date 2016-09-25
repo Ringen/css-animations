@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Animations</title>
+  <meta name="description" content="Instructions for CSS animations workshop at The Code Pub.">
+  <meta name="author" content="Lisa Ring">
+
+  <link rel="stylesheet" href="public/css/main.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <h1 class="h1">CSS Animations</h1>
+  <div class="container">
+  	<p class="intro">CSS animations are funny and useful when creating modern and interactive interfaces. They can be used to create loading indicators, give feedback on click and much more. Or why not just add some fun! The exercises below are a good way to start but feel free to freestyle as much as you want and play with the animation properties to see what happens. Good luck!</p>
+  </div>
+
+  <article class="container">
+  	<h2 class="h2">1. Horizontal movement with transition</h2>
+  	<p class="description">Make the box move horizontally on hover by using a transition.</p>
+  	<p class="description description--hint">Hint: Use the <code>:hover</code> pseudo-class and <code>transform: translate</code> property.</p>
+  	<p class="description">Syntax: <code>transition: [property] [duration] [timing-function] [delay];</code></p>
+	<h3 class="h3">Example</h3>
+  	<div class="example">
+  		<div class="box box--1"></div>
+  	</div>
+  	<p><a href="http://codepen.io/ringeru/pen/VKKkgV?editors=1100" class="link">Exercise 1</a></p>
+  </article>
+
+  <article class="container">
+  	<h2 class="h2">2. Rotation with transition</h2>
+  	<p class="description">Make the box rotate on hover by using a transition.</p>
+  	<p class="description description--hint">Hint: Use the <code>:hover</code> pseudo-class and <code>transform: rotate</code> property.</p>
+  	<p class="description">Syntax: <code>transition: [property] [duration] [timing-function] [delay];</code></p>
+  	<h3 class="h3">Example</h3>
+  	<div class="example">
+  		<div class="box box--2"></div>
+  	</div>
+  	<p><a href="http://codepen.io/ringeru/pen/VKKkgV?editors=1100" class="link">Exercise 2</a></p>
+  </article>
+
+  <article class="container">
+  	<h2 class="h2">3. Horizontal movement with keyframes</h2>
+  	<p class="description">Make the box move back and forth horizontally using keyframes. Add a short pause in the middle of the animation.</p>
+  	<p class="description description--hint">Hint: Keyframes can be declared with the same styling.</p>
+  	<p class="description">Syntax: <code>animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode][play-state];</code></p>
+  	<h3 class="h3">Example</h3>
+  	<div class="example">
+  		<div class="box box--3"></div>
+  	</div>
+  	<p><a href="http://codepen.io/ringeru/pen/zKKOQp?editors=1100" class="link">Exercise 3</a></p>
+  </article>
+
+  <article class="container">
+  	<h2 class="h2">4. Blinking boxes</h2>
+  	<p class="description">Make the box blink. Use keyframes to make it fade in and out.</p>
+  	<p class="description description--hint">Hint: Use the <code>opacity</code> property.</p>
+  	<h3 class="h3">Example a</h3>
+  	<div class="example">
+  		<div class="box box--4a"></div>
+  	</div>
+  	<p class="description">You can also make it shrink at the same time as it fades.</p>
+  	<p class="description description--hint">Hint: Use the <code>transform: scale</code> property.</p>
+  	<h3 class="h3">Example b</h3>
+  	<div class="example">
+  		<div class="box box--4b"></div>
+  	</div>
+  	<p><a href="http://codepen.io/ringeru/pen/zKKOQp?editors=1100" class="link">Exercise 4</a></p>
+  </article>
+
+  <article class="container">
+  	<h2 class="h2">5. Make two boxes blink out of step</h2>
+  	<p class="description">Use the code from exercise 4. Add a copy of the box and make it blink out of step with the first one.</p>
+  	<p class="description description--hint">Hint: Use the <code>animation-delay</code> property.</p>
+  	<h3 class="h3">Example</h3>
+  	<div class="example">
+  		<div class="box box--5a"></div>
+  		<div class="box box--5b"></div>
+  	</div>
+  	<p><a href="http://codepen.io/ringeru/pen/kkkNKo?editors=1100" class="link">Exercise 5</a></p>
+  </article>
+
+  <article class="container">
+  	<h2 class="h2">6. Bouncing spinner</h2>
+  	<p class="description">Make two circles shrink and grow out of step with each other.</p>
+  	<p class="description description--hint">Hint: Combine <code>transform: scale</code> and <code>animation-delay</code> OR create two separate keyframes.</p>
+  	<h3 class="h3">Example</h3>
+  	<div class="example">
+  		<div class="spinner">
+  			<div class="bounce-1"></div>
+  			<div class="bounce-2"></div>	
+  		</div>
+  	</div>
+  	<p><a href="http://codepen.io/ringeru/pen/VKKkog?editors=1100" class="link">Exercise 6</a></p>
+  </article>
+
+  <article class="container">
+  	<h2 class="h2">7. Flickering boxes</h2>
+  	<p class="description">Create a row of flickering boxes by using keyframes.</p>
+  	<p class="description description--hint">Hint: Use the <code>animation-delay</code> property.</p>
+  	<h3 class="h3">Example</h3>
+  	<div class="example">
+  		<div class="spinner-3">
+  			<div class="cube-3 cube--1"></div>
+  			<div class="cube-3 cube--2"></div>
+  			<div class="cube-3 cube--3"></div>	
+  		</div>
+  	</div>
+  	<p><a href="http://codepen.io/ringeru/pen/RGGwbm?editors=1100" class="link">Exercise 7</a></p>
+  </article>
+
+  <article class="container">
+  	<h2 class="h2">8. Flickering spinner</h2>
+  	<p class="description">Use the code from exercise 7 to create a spinner of flickering boxes.</p>
+  	<p class="description description--hint">Hint: Some boxes may have the same <code>animation-delay</code>.</p>
+  	<h3 class="h3">Example</h3>
+  	<div class="example">
+  		<div class="spinner-2">
+  			<div class="cube cube--1"></div>
+  			<div class="cube cube--2"></div>
+  			<div class="cube cube--3"></div>
+  			<div class="cube cube--4"></div>
+  			<div class="cube cube--5"></div>
+  			<div class="cube cube--6"></div>
+  			<div class="cube cube--7"></div>
+  			<div class="cube cube--8"></div>
+  			<div class="cube cube--9"></div>	
+  		</div>
+  	</div>
+  	<p><a href="http://codepen.io/ringeru/pen/gwwObO?editors=1100" class="link">Exercise 8</a></p>
+  </article>
+</body>
+</html>

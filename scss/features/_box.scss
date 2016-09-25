@@ -1,0 +1,79 @@
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: $color-box;
+}
+
+.box--1 {
+	transition: transform 2s ease-in-out;
+
+	&:hover {
+		transform: translate(300%);
+	}
+}
+
+.box--2 {
+	transition: transform 2s ease-in-out;
+
+	&:hover {
+		transform: rotate(720deg);
+	}
+}
+
+.box--3 {
+	animation: pendulum 2s ease-in-out alternate infinite;
+}
+
+@keyframes pendulum {
+	0% {
+		transform: translate(0%);
+	}
+	40%, 60% {
+		transform: translate(150%);
+	}
+	100% {
+		transform: translate(300%);
+	}
+}
+
+.box--4a {
+	//display: inline-block;
+	//margin-right: 2em;
+	animation: blink-a 1s ease-in-out alternate infinite;
+}
+
+@keyframes blink-a {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.box--4b {
+	//display: inline-block;
+	animation: blink-b 1s ease-in-out alternate infinite;
+}
+
+@keyframes blink-b {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+
+.box--5a {
+	display: inline-block;
+	margin-right: 2em;
+	animation: blink-a 1s ease-in-out alternate infinite;
+}
+
+.box--5b {
+	display: inline-block;
+	animation: blink-a 1s 1s ease-in-out alternate infinite;
+}

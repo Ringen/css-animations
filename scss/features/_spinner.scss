@@ -1,0 +1,96 @@
+.spinner {
+	width: 100px; 
+	height: 100px;
+	position: relative;
+}
+
+.bounce-1, .bounce-2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: $color-box;
+	position: absolute;
+	top: 0;
+	left: 0; 
+}
+
+.bounce-1 {
+	animation: bounce1 1.5s ease alternate infinite;
+	opacity: 0.5;
+}
+
+.bounce-2 {
+	animation: bounce2 1.5s ease alternate infinite;
+	opacity: 0.8;
+}
+
+@keyframes bounce1 {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+
+@keyframes bounce2 {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+.spinner-2 {
+	width: 100px;
+	height: 100px;
+}
+
+.cube {
+	background-color: $color-box;
+	display: inline-block;
+	width: 30%;
+	height: 30%;
+}
+
+.cube--7 {
+	animation: flick 1.3s 0s linear infinite;
+}
+
+.cube--4, .cube--8 {
+	animation: flick 1.3s 0.1s linear infinite;
+}
+
+.cube--1, .cube--5, .cube--9 {
+	animation: flick 1.3s 0.2s linear infinite;
+}
+
+.cube--2, .cube--6 {
+	animation: flick 1.3s 0.3s linear infinite;
+}
+
+.cube--3 {
+	animation: flick 1.3s 0.4s linear infinite;
+}
+
+@keyframes flick {
+	0%, 70%, 100% {
+		transform: scale(1);
+	}
+	35% {
+		transform: scale(0);
+	}
+}
+
+.spinner-3 {
+	width: 100px;
+	height: 30px;
+}
+
+.cube-3 {
+	background-color: $color-box;
+	display: inline-block;
+	width: 30%;
+	height: 100%;
+}

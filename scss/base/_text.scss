@@ -1,0 +1,28 @@
+html {
+	background-color: $color-background;
+}
+
+code {
+	background-color: $color-code-background;
+	font-style: normal;
+}
+
+.h1 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: $font-weight-light;
+}
+
+.h2 {
+	font-weight: $font-weight-regular;
+}
+
+.h3 {
+	font-weight: $font-weight-bold;
+	margin: 1.5em 0 0.5em;
+}
+
+.intro {
+	@include font-size(18);
+	line-height: 1.3em;
+}
