@@ -2,7 +2,7 @@
   "name": "css-animations",
   "version": "1.0.0",
   "engines": {
-    "node": "4.5.0",
+    "node": "4.5.0"
   },
   "description": "Instructions for CSS animation workshop at The Code Pub",
   "main": "index.html",
